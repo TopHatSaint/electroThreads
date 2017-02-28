@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>Electro Threads Clone</title>
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0a10dd4d29.js"></script>
+</head>
+
+<body>
+
+    <magic-nav></magic-nav>
+
+    <!-- TOP STATIC NAV BAR -->
+    <section>
+
+
+        <div class="TopBar">
+            <ul>
+                <li class="floatLeft"><i class="fa fa-twitter fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft"><i class="fa fa-facebook fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft"><i class="fa fa-youtube-play fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft"><i class="fa fa-pinterest-p fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft"><i class="fa fa-snapchat-ghost fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft"><i class="fa fa-envelope-o fa-inverse" aria-hidden="true"></i></li>
+                <li class="navFontColor floatLeft">210.802.7587</li>
+                <li class="navFontColor floatLeft">YOUR WISHLIST</li>
+                <li class="navFontColor floatLeft">YOUR CART</li>
+                <li class="navFontColor floatLeft">TRACK YOUR ORDER</li>
+                <div class="cartButton floatRight">
+                    <li class="navFontColor margin-top "><i class="fa fa-shopping-cart  " aria-hidden="true"></i> 0 </li>
+                </div>
+                <div>
+                    <li class="navFontColor pushLeft"><i class="fa fa-user-o fa-inverse pushIcon" aria-hidden="true"></i>MY ACCOUNT</li>
+                    <!-- change to position relative of the cart box -->
+                </div>
+            </ul>
+        </div>
+
+    </section>
+    <!-- STATIC NAV BAR -->
+    <section class="clear">
+        <div class="SecondTopBar">
+            <ul>
+                <li class="floatLeft iNeedMySpace"><img src="http://i.imgur.com/IBTAaHE.png" height="45vh" width="50%" ></li>
+                <li class="navFontColor2 floatLeft">MEN</li>
+                <li class="navFontColor2 floatLeft">WOMEN</li>
+                <li class="navFontColor2 floatLeft">CRIB</li>
+                <li class="navFontColor2 floatLeft">NEW</li>
+                <li class="navFontColor2 floatLeft">MONTHLY BOX</li>
+                <li class="navFontColor2 floatLeft">KIDS</li>
+                <li class="navFontColor2 floatLeft">ACCESSORIES</li>
+                <li class="navFontColor2 floatLeft">COLLECTIONS</li>
+                <li class="navFontColor2 floatLeft">DEALS</li>
+
+                <li class="floatLeft search"> <input type="text" name="search" class="size" placeholder="Search.."><span class="fa fa-search fa-inverse" aria-hidden="true"></span> </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="clear">
+        <div class="">
+            <img src="https://dummyimage.com/500x1800/000/fff"> <br>
+            <img src="https://dummyimage.com/500x1800/000/fff"> <br>
+            <img src="https://dummyimage.com/500x1800/000/fff">
+        </div>
+    </section> -->
+    <ui-view></ui-view>
+  <p class="abosouluteTest">hello</p>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./dist/all.js"></script>
+</body>
+
+</html>

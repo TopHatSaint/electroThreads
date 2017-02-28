@@ -1,0 +1,69 @@
+// Variables
+$PT:'PT Sans', sans-serif;
+
+
+.magicNavWrapper {
+  width:100%;
+  height: 7vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: -7vh;
+  transition: 1s;
+}
+.linksWrap {
+  display: flex;
+  color: white;
+  margin-left: 10%;
+  position: relative;
+  height: 100%;
+}
+.links {
+  margin-left: 15px;
+  height: 100%;
+  line-height: 7vh;
+}
+
+.searchBarWrap {
+  width:100%;
+  height: 11vh;
+  background-color: black;
+
+  display: none;
+  position: absolute;
+  top:0vh;
+
+}
+.searchOptions{
+  border: none;
+  width:1000px;
+  height: 55px;
+  margin-left: 15%;
+  background-color: black;
+  color: white;
+  outline:0;
+  border-width: 0 0 2px 0;
+  border-bottom-width: 2px;
+  border-bottom-color: white;
+  border-color:white;
+  font-family: $PT;
+  font-size: 20px;
+  font-weight: 500;
+}
+.searchBarShow{
+  transition: 1s;
+  display: flex;
+  top:7vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.iNeedMySpace2{
+  margin-right: 7%;
+  margin-top: .3%;
+  margin-left: 1.5%;
+}
+hr {
+  color: white;
+}
