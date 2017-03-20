@@ -1,0 +1,33 @@
+<section class="detailsWrapper">
+  <div class="">
+    <img class="productImage" ng-src = "{{singleProduct.imageurl}}">
+  </div>
+  <div class="productDetails">
+    <h1 class="title">{{singleProduct.name}}</h1>
+    <hr class="hrLength">
+    <h3 class="productPrice">{{singleProduct.price}}</h3> <button type="button" class="detailsCartButton"name="addToCart" ng-click="addToCart(singleProduct.id, qty)">ADD TO CART</button>
+    <input type="number" name="" value="" min="1" ng-model="qty">
+    <!-- <p>Valid like salad! Hand-drawn art by Laura McGowan "Meditating Rafiki" Pullover Hoodie!</p> -->
+    <p class="bold">Features</p>
+    <ul class="productList">
+      <li class="productLi">100% polyester but feels as soft as cotton - Guaranteed.<br></br></li>
+
+      <li class="productLi">Vibrant full color print, front & back<br></br></li>
+
+      <li class="productLi">Design will never peel, flake or crack<br></br></li>
+
+      <li class="productLi">Extremely Soft to the touch<br></br></li>
+
+      <li class="productLi">Will not fade... EVER!<br></br></li>
+
+      <li class="productLi">Printed on our sustainably made fabrics<br></br></li>
+      <br></br>
+      <br></br>
+
+      <p>All of our garments are made to order by hand and due to high demand</p><p class="underlineInfo"> it may take up to 10-15 business days to ship.</p>
+      <p><b>Fashion Fit Unisex Sizing: Guys may want to order 1 size larger for a <br></br> looser fit and girls 1 size smaller than normal!</b></p>
+      <img class="sizingPhoto" ng-src = "{{singleProduct.sizingimageurl}}">
+
+  </div>
+
+</section>

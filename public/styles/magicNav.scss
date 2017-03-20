@@ -11,6 +11,7 @@ $PT:'PT Sans', sans-serif;
   position: fixed;
   top: -7vh;
   transition: 1s;
+  z-index: 9999;
 }
 .linksWrap {
   display: flex;
@@ -66,4 +67,12 @@ $PT:'PT Sans', sans-serif;
 }
 hr {
   color: white;
+}
+i:hover {
+  transition: color 0.3s ease;
+  color: #01D4E6;
+}
+li:hover {
+  transition: color 0.3s ease;
+  color: #01D4E6;
 }

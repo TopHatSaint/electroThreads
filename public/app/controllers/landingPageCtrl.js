@@ -4,7 +4,7 @@ angular.module("app").controller("landingPageCtrl", function($scope , mainServic
   // VARIABLES
   // ============================================================
       mainService.getProducts().then(function(response) {
-        console.log(response);
+        console.table(response);
         $scope.products = response;
       }); // FUNCTIONS
   // ============================================================

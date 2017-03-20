@@ -22,22 +22,22 @@ $L: left;
 
 // CLASSES
 // NAVBAR1
-ul {
+.navBar1-ul {
     list-style-type: none;
     margin-top: .5%;
     padding: 0;
-
-    li {
+}
+    .navBar-li {
       display: inline-block;
       padding-left: 1.5%;
       font-family: $PT;
     }
 
-    li:hover {
+    .navBar-li:hover {
       transition: color 0.3s ease;
       color: #01D4E6;
     }
-}
+
 
 i:hover {
   transition: color 0.3s ease;
@@ -75,7 +75,7 @@ float: left;
 }
 .cartButton{
   height:4vh;
-  width: 3.67%;
+  width: 2.67%;
   background-color:#F8FF00;
   z-index: 3;
   display: inline-block;
@@ -83,6 +83,11 @@ float: left;
 }
 .margin-top{
   margin-top: 15%;
+
+}
+.loginStyle{
+  text-decoration: none;
+  color: gray;
 }
 //===============================================
 // NAVBAR2
@@ -279,6 +284,8 @@ input.size{
   background-size: cover;
 }
 //FEATURED PRODUCTS
+//=============================================================================
+//=============================================================================
 .featuredFont{
   text-align: center;
   color:#333333;
@@ -299,14 +306,14 @@ hr {
  text-align: center;
 }
 .featuredProductPhoto{
+  z-index: 1;
   // width:250px;
   max-width: 100%;
   max-height: 100%;
-
+  filter: brightness(100%);
+  transition: filter 0.5s ease;
 }
-.hiddenPhoto{
 
-}
 .repeatWrap{
 display: flex;
 flex-direction: row;
@@ -318,25 +325,178 @@ padding-bottom: 15px;
 width: 75%;
 }
 .overlayPhoto{
+ z-index: 3;
   height:40vh;
   width: 100%;
   margin-bottom: 15px;
   position:relative;
   text-align: center;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  border-left: 0px solid black;
+  border-right: 0px solid black;
+
+}
+.overlayPhoto:hover{
+  .hiddenInfoUp{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+
+  }
+  .featuredProductPhoto{
+    filter: brightness(40%
+    );
+  }
 }
 .hiddenInfoUp{
+  z-index: 3;
   // flex-wrap: wrap;
   // display: flex;
   position: absolute;
   top:0;
   text-align: center;
   width: 100%;
+  display: none;
+  // color: white;
+  font-family: $PT;
+  transition: display , 0.75s ease;
+  transition: font-size, 0.75s ease;
 }
 .hiddenInfoDown{
   position: absolute;
  bottom:0;
   text-align: center;
   width: 100%;
+}
+.writeUs{
+  font-family: $PT;
+  font-size: 35px;
+  margin: auto;
+}
+.googleMap{
+  position: absolute;
+  bottom: -1000;
+  left: 452px;
+  display: flex;
+  margin-bottom: 35px;
+}
+//PRODUCTS DETAIL PAGE
+//=====================================================================
+//=====================================================================
+.detailsWrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+.productImage{
+  height: 80vh;
+  border: 2px solid black;
+  margin-left: 15%;
+}
+.hrLength{
+  width:100%;
+}
+.productDetails{
+  margin-right: 0%;
+}
+.titleCenter{
+  text-align: center;
+}
+.productPrice{
+  font-family: $PT;
+  color:#D65151;
+  font-size: 25px;
+}
+.detailsCartButton{
+  height: 5vh;
+  width: 22vh;
+  background-color:#FF0702;
+  color: white;
+  border:1px solid white;
+}
+.bold{
+  font-weight: 700;
+}
+.productList{
+
+}
+.productLi{
+
+}
+.productLi:hover{
+  color: black;
+
+}
+.underlineInfo{
+  text-decoration: underline;
+  color:#FFAB2F;
+  font-weight: 600;
+}
+.sizingPhoto{
+  height:65vh;
+  width:85%;
+}
+//  CART PAGE
+//===================================================================
+//===================================================================
+.cartWrapper{
+  width: 85%;
+  text-align: center;
+}
+.cartInfo{
+  display: flex;
+  justify-content: center;
+
+}
+.classInfoStyle{
+  font-family: $PT;
+  font-size: 25px;
+ text-align: justify;
+ margin-left: 10px;
+ font-weight: 100;
+}
+.cartImage{
+  height: 45vh;
+  width: auto;
+}
+.buttonStyle1{
+  border-radius: 35px;
+  background-color: #D54D4D;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  font-family: $PT;
+  font-size: 25px;
+}
+.buttonStyle1:hover{
+  background-color: #FF0702;
+}
+.buttonStyle2{
+  border-radius: 35px;
+  background-color: #D54D4D;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  font-family: $PT;
+}
+.buttonStyle2:hover{
+  background-color: #FF0702;
+}
+.totalClass{
+  font-family: $PT;
+  font-size: 25px;
+}
+.flexStripe{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+ text-align: center;
+}
+.stripe{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 /* When the input field gets focus, change its width to 100% */
 //USE FOR THE POP UP NAV

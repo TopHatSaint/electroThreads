@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Electro Threads Clone</title>
     <link rel="stylesheet" href="./dist/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script src="https://use.fontawesome.com/0a10dd4d29.js"></script>
 </head>
 
@@ -18,22 +18,22 @@
 
 
         <div class="TopBar">
-            <ul>
-                <li class="floatLeft"><i class="fa fa-twitter fa-inverse" aria-hidden="true"></i></li>
-                <li class="floatLeft"><i class="fa fa-facebook fa-inverse" aria-hidden="true"></i></li>
-                <li class="floatLeft"><i class="fa fa-youtube-play fa-inverse" aria-hidden="true"></i></li>
-                <li class="floatLeft"><i class="fa fa-pinterest-p fa-inverse" aria-hidden="true"></i></li>
-                <li class="floatLeft"><i class="fa fa-snapchat-ghost fa-inverse" aria-hidden="true"></i></li>
-                <li class="floatLeft"><i class="fa fa-envelope-o fa-inverse" aria-hidden="true"></i></li>
-                <li class="navFontColor floatLeft">210.802.7587</li>
-                <li class="navFontColor floatLeft">YOUR WISHLIST</li>
-                <li class="navFontColor floatLeft">YOUR CART</li>
-                <li class="navFontColor floatLeft">TRACK YOUR ORDER</li>
-                <div class="cartButton floatRight">
-                    <li class="navFontColor margin-top "><i class="fa fa-shopping-cart  " aria-hidden="true"></i> 0 </li>
-                </div>
+            <ul class="navBar1-ul">
+                <li class="floatLeft navBar-li"><i class="fa fa-twitter fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft navBar-li"><i class="fa fa-facebook fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft navBar-li"><i class="fa fa-youtube-play fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft navBar-li"><i class="fa fa-pinterest-p fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft navBar-li"><i class="fa fa-snapchat-ghost fa-inverse" aria-hidden="true"></i></li>
+                <li class="floatLeft navBar-li"><i class="fa fa-envelope-o fa-inverse" aria-hidden="true"></i></li>
+                <li class="navFontColor floatLeft navBar-li">210.802.7587</li>
+                <li class="navFontColor floatLeft navBar-li">YOUR WISHLIST</li>
+                <li class="navFontColor floatLeft navBar-li">YOUR CART</li>
+                <li class="navFontColor floatLeft navBar-li">TRACK YOUR ORDER</li>
+                <a href="/#/cart"><div class="cartButton floatRight navBar-li">
+                    <li class="navFontColor margin-top "><i class="fa fa-shopping-cart class   " aria-hidden="true"></i></li>
+                </div></a>
                 <div>
-                    <li class="navFontColor pushLeft"><i class="fa fa-user-o fa-inverse pushIcon" aria-hidden="true"></i>MY ACCOUNT</li>
+                    <li class="navFontColor pushLeft"><i class="fa fa-user-o fa-inverse pushIcon" aria-hidden="true"></i><a class="loginStyle" href="/auth">MY ACCOUNT</a></li>
                     <!-- change to position relative of the cart box -->
                 </div>
             </ul>
@@ -43,19 +43,18 @@
     <!-- STATIC NAV BAR -->
     <section class="clear">
         <div class="SecondTopBar">
-            <ul>
-                <li class="floatLeft iNeedMySpace"><img src="http://i.imgur.com/IBTAaHE.png" height="45vh" width="50%" ></li>
-                <li class="navFontColor2 floatLeft">MEN</li>
-                <li class="navFontColor2 floatLeft">WOMEN</li>
-                <li class="navFontColor2 floatLeft">CRIB</li>
-                <li class="navFontColor2 floatLeft">NEW</li>
-                <li class="navFontColor2 floatLeft">MONTHLY BOX</li>
-                <li class="navFontColor2 floatLeft">KIDS</li>
-                <li class="navFontColor2 floatLeft">ACCESSORIES</li>
-                <li class="navFontColor2 floatLeft">COLLECTIONS</li>
-                <li class="navFontColor2 floatLeft">DEALS</li>
-
-                <li class="floatLeft search"> <input type="text" name="search" class="size" placeholder="Search.."><span class="fa fa-search fa-inverse" aria-hidden="true"></span> </li>
+            <ul class="navBar1-ul">
+                <li class="floatLeft iNeedMySpace"><a href="/#/landingPage"><img src="http://i.imgur.com/IBTAaHE.png" height="45vh" width="50%" ></a></li>
+                <li class="navFontColor2 floatLeft navBar-li">MEN</li>
+                <li class="navFontColor2 floatLeft navBar-li">WOMEN</li>
+                <li class="navFontColor2 floatLeft navBar-li">CRIB</li>
+                <li class="navFontColor2 floatLeft navBar-li">NEW</li>
+                <li class="navFontColor2 floatLeft navBar-li">MONTHLY BOX</li>
+                <li class="navFontColor2 floatLeft navBar-li">KIDS</li>
+                <li class="navFontColor2 floatLeft navBar-li">ACCESSORIES</li>
+                <li class="navFontColor2 floatLeft navBar-li">COLLECTIONS</li>
+                <li class="navFontColor2 floatLeft navBar-li">DEALS</li>
+                <li class="floatLeft search navBar-li"> <input type="text" name="search" class="size" placeholder="Search.."><span class="fa fa-search fa-inverse" aria-hidden="true"></span> </li>
 
             </ul>
         </div>
@@ -71,12 +70,14 @@
         </div>
     </section> -->
     <ui-view></ui-view>
-  <p class="abosouluteTest">hello</p>
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v2/"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <script src="./app/app.js"></script>
     <script src="./dist/all.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-stripe/4.2.12/angular-stripe.js"></script>
+
 </body>
 
 </html>

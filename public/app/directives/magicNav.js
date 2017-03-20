@@ -10,7 +10,7 @@ angular.module("app").directive('magicNav', function() {
     link: function(scope, element, att) {
         $(window).scroll(function(){
           var scrollPosition = $(this).scrollTop();
-          console.log(scrollPosition)
+          // console.log(scrollPosition)
           if(scrollPosition > 100){
             $(".magicNavWrapper").css({
               "top": "0px",

@@ -1,6 +1,6 @@
 <div class=
 "overlayPhoto">
-  <div class="hiddenInfoUp">{{product.name}}<br>{{product.price}}</div>
+  <div class="hiddenInfoUp">{{product.name}}<br>{{product.price | currency}}</div>
   <img class="featuredProductPhoto" ng-src='{{product.imageurl}}'>
-  <div class="hiddenInfoDown"><button type="button" name="quickView"></button>
+  <!-- <div class="hiddenInfoDown"><button type="button" name="quickView"></button> -->
 </div>

@@ -47,13 +47,23 @@ module.exports = {
       req.body.price,
       req.body.imageUrl,
       req.body.sizingImageUrl,
-      req.params.ID
+      req.params.id
     ], function(err, results){
       if (err){
          console.error(err);
          return res.send(err);
        }
        return res.send(results);
+    })
+  },
+  getProduct: (req, res) => {
+    db.product.get_product([req.params.id],
+      function(err, results){
+      if (err){
+        console.log(err);
+        return res.send(err);
+      }
+      return res.status(200).send(results);
     })
   }
 

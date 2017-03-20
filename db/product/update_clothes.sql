@@ -5,5 +5,5 @@ SET
   imageUrl = COALESCE($3, hometown),
   sizingImageUrl = COALESCE($4, imageUrl)
 
-WHERE ID = $1
+WHERE id = $1
 RETURNING *;

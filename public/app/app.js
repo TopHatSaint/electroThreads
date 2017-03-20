@@ -1,6 +1,9 @@
 
 // ============================================================
-var app = angular.module("app",["ui.router"]).config(function($stateProvider, $urlRouterProvider) {
+var app = angular.module("app",["ui.router", 'angular-stripe']).config(function($stateProvider, $urlRouterProvider, stripeProvider) {
+
+    stripeProvider.setPublishableKey('pk_test_mT7SSb0LiGWcFiYttJxQkn4T')
+
   // INITILIZE STATES
   // ============================================================
   $stateProvider

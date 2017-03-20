@@ -1,0 +1,77 @@
+<div class="cartWrapper">
+    <h1>SHOPPING CART</h1>
+    <div class="" ng-repeat="product in orderData.products">
+        <hr></hr>
+      <div class="cartInfo">
+        <div>
+            <img class="cartImage" ng-src="{{product.imageurl}}">
+        </div>
+        <div class="classInfoStyle">
+            Name: {{product.name}}<br> Price: {{product.price}}<br> Quantity: {{product.qty}}<br> Total: {{product.price * product.qty | currency}}
+            <br></br>
+            <input type="number" name="" value="" min="1" ng-model="product.qty" ng-change="updateItem(product.id, product.qty)"><br></br>
+            <button class="buttonStyle1" type="button" name="button" ng-click="deleteItem(product.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <form ng-submit='charge(payment, total)'>
+  <div class="stripe">
+    <h1 class="totalClass">Electro Threads</h1><br><br>
+  <section class="flexStripe">
+    <section class='form-group'>
+
+        <div ng-model = "total"></div>
+        <label>Name on card:</label>
+        <input
+        type="text"
+        name="name"
+        class='form-control'
+        placeholder='any random name'
+        required>
+    </section>
+    <section class='form-group'>
+        <label>Card number:</label>
+        <input
+        class='form-control'
+        ng-model="payment.card.number"
+        type="text"
+        placeholder="use one of Stripe's test card numbers"
+        required>
+    </section>
+    <section class='form-group'>
+        <label>Exp. Month</label>
+        <input
+        class='form-control'
+        ng-model="payment.card.exp_month"
+        type="text"
+        name="name"
+        placeholder="MM">
+    </section>
+    <section class='form-group'>
+        <label>Exp. Year</label>
+        <input
+        class='form-control'
+        ng-model="payment.card.exp_year"
+        type="text"
+        name="name"
+        placeholder="YY">
+    </section>
+    <section class='form-group'>
+        <label>CVC:</label>
+        <input
+        class='form-control'
+        ng-model="payment.card.cvc"
+        placeholder='random CVC number'
+        type="text"
+        required>
+    </section>
+  </section>
+<div>
+    <br><br>
+    <!-- <button class='btn btn-primary' type='sumbit'>Confirm</button> -->
+        <button class="buttonStyle2" type="submit" name="button" ng-click="submit()">Submit Order</button> <a class="totalClass">Total: {{total | currency}}</a>
+</form>
+
+
+    <hr>
